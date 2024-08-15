@@ -8715,6 +8715,11 @@ h1, h2, h3, h4, h5,
       color: rgba(0, 0, 0, 0.2);
       display: block;
       margin-bottom: 0; }
+    .car-wrap .text span.driver {
+      font-weight: 400;
+      color: rgba(46, 204, 113);
+      display: block;
+      margin-bottom: 0; }
     .car-wrap .text p.d-block {
       width: 100%; }
       .car-wrap .text p.d-block a {
@@ -9948,18 +9953,44 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-    .map-container {
+    /* .map-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       max-width: 100%;
-  }
+  } */
   
-  .map-container iframe {
+  /* .map-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+  } */
+
+  html,
+  body,
+  .intro {
+    height: 100%;
+  }
+  
+  table td,
+  table th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .card {
+    border-radius: .5rem;
+  }
+  
+  .table-scroll {
+    border-radius: .5rem;
+  }
+  
+  thead {
+    top: 0;
+    position: sticky;
   }
